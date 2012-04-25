@@ -1,0 +1,28 @@
+#!/bin/sh
+set -e
+echo ">>>>>> Installing Ruby"
+#install jruby
+######### RUBY INSTALL
+curl -s -o use-ruby https://repository-cloudbees.forge.cloudbees.com/distributions/ci-addons/use-ruby
+RUBY_VERSION=1.9.3-p125 \
+  source ./use-ruby
+#echo ruby version
+echo ">>>>>> Echoing Ruby Version"
+ruby -v
+
+echo ">>>>>> Installing Bundler"
+#install bundler
+
+gem install bundler --no-ri --no-rdoc
+
+echo ">>>>>> Installing all Gems"
+# bundle check || bundle install --deployment --local --without development
+bundle install --deployment --without development
+
+echo ">>>>>> RUNNING SPECS"
+bundle exec rspec spec
+echo ">>>>>> Creating War"
+#create war
+bundle exec warble war
+echo ">>>>>> Hoping the Deployer plugin will pick the changes"
+set +e

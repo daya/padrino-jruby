@@ -1,0 +1,251 @@
+2012-04-24 14:25:57 INFO: No global web.xml found
+2012-04-24 14:25:58 INFO: jruby 1.6.7 (ruby-1.8.7-p357) (2012-02-22 3e82bc8) (Java HotSpot(TM) 64-Bit Server VM 1.6.0_31) [darwin-x86_64-java]
+2012-04-24 14:26:07 INFO: Info: received min runtimes = 1
+2012-04-24 14:26:07 INFO: Info: received max runtimes = 5
+2012-04-24 14:26:07 INFO: An exception happened during JRuby-Rack startup
+uninitialized constant JrackTest
+--- System
+jruby 1.6.7 (ruby-1.8.7-p357) (2012-02-22 3e82bc8) (Java HotSpot(TM) 64-Bit Server VM 1.6.0_31) [darwin-x86_64-java]
+Time: Tue Apr 24 09:26:07 -0500 2012
+Server: Apache Tomcat/7.0.26
+jruby.home: /Users/dayas/.rbenv/versions/jruby-1.6.7
+
+--- Context Init Parameters:
+jruby.compat.version = 1.8.7
+jruby.initial.runtimes = 1
+jruby.max.runtimes = 5
+jruby.min.runtimes = 1
+public.root = /public
+rack.env = development
+rackup.path = config.ru
+
+--- Backtrace
+NameError: uninitialized constant JrackTest
+         const_missing at org/jruby/RubyModule.java:2642
+         const_missing at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/rake-0.9.2.2/lib/rake/ext/module.rb:36
+                (root) at /Users/dayas/RubyProjects/padrino_jruby/app/controllers/index.rb:1
+               require at org/jruby/RubyKernel.java:1033
+             safe_load at /Users/dayas/RubyProjects/padrino_jruby/app/controllers/index.rb:148
+  require_dependencies at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core/loader.rb:162
+                  each at org/jruby/RubyArray.java:1615
+  require_dependencies at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core/loader.rb:160
+  require_dependencies at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core/application.rb:236
+    setup_application! at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core/application.rb:95
+              map_onto at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core/mounter.rb:88
+           application at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core.rb:57
+                  each at org/jruby/RubyArray.java:1615
+           application at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core.rb:57
+                (root) at /Users/dayas/RubyProjects/padrino_jruby/config.ru:9
+         instance_eval at org/jruby/RubyKernel.java:2045
+            initialize at file:/Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/jruby-rack-1.1.5/lib/jruby-rack-1.1.5.jar!/vendor/rack-1.4.1/rack/builder.rb:51
+                (root) at /Users/dayas/RubyProjects/padrino_jruby/config.ru:1
+
+--- RubyGems
+Gem.dir: /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino
+Gem.path:
+/Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino
+/Users/dayas/RubyProjects/padrino_jruby/WEB-INF/gems
+Activated gems:
+  bundler-1.1.3
+  rake-0.9.2.2
+  multi_json-1.2.0
+  activesupport-3.1.4
+  diff-lcs-1.1.3
+  mime-types-1.18
+  grit-2.4.1
+  haml-3.1.4
+  rack-1.4.1
+  url_mount-0.2.1
+  http_router-0.10.2
+  i18n-0.6.0
+  polyglot-0.3.3
+  treetop-1.4.10
+  mail-2.3.3
+  rack-protection-1.2.0
+  tilt-1.3.3
+  sinatra-1.3.2
+  thor-0.14.6
+  padrino-core-0.10.5
+  padrino-helpers-0.10.5
+  padrino-admin-0.10.5
+  padrino-cache-0.10.5
+  padrino-gen-0.10.5
+  padrino-mailer-0.10.5
+  padrino-0.10.5
+  rack-test-0.6.1
+  rspec-core-2.9.0
+  rspec-expectations-2.9.1
+  rspec-mocks-2.9.0
+  rspec-2.9.0
+  sinatra-flash-0.3.0
+
+--- Bundler
+Bundler.bundle_path: /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino
+Bundler.root: /Users/dayas/RubyProjects/padrino_jruby
+Gemfile: /Users/dayas/RubyProjects/padrino_jruby/Gemfile
+Settings:
+  build.pg = -–with-opt-include=/usr/local/Cellar/postgresql/9.0.0//include/ --with-opt-lib=/usr/local/Cellar/postgresql/9.0.0/lib/
+  bin_path = /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/bundler-1.1.3/bin/bundle
+  gemfile = /Users/dayas/RubyProjects/padrino_jruby/Gemfile
+
+--- JRuby-Rack Config
+compat_version = RUBY1_8
+default_logger = org.jruby.rack.logging.StandardOutLogger@22023fcb
+err = java.io.PrintStream@1a383244
+filter_adds_html = true
+filter_verifies_resource = false
+ignore_environment = false
+initial_memory_buffer_size = 
+initial_runtimes = 1
+jms_connection_factory = 
+jms_jndi_properties = 
+logger = org.jruby.rack.logging.ServletContextLogger@73d9024f
+logger_class_name = servlet_context
+logger_name = jruby.rack
+maximum_memory_buffer_size = 
+maximum_runtimes = 5
+num_initializer_threads = 
+out = java.io.PrintStream@5ebc448b
+rackup = 
+rackup_path = config.ru
+rewindable = true
+runtime_arguments = 
+runtime_timeout_seconds = 
+serial_initialization = false
+servlet_context = org.apache.catalina.core.ApplicationContextFacade@32e701fb
+2012-04-24 14:26:07 SEVERE: unable to create shared application instance
+2012-04-24 14:26:07 SEVERE: Error: application initialization failed
+2012-04-24 14:26:07 INFO: Starting ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:26:17 INFO: Pausing ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:26:17 INFO: Stopping service Tomcat
+2012-04-24 14:26:17 INFO: Stopping ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:26:17 INFO: Destroying ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:26:41 INFO: No global web.xml found
+2012-04-24 14:26:42 INFO: jruby 1.6.7 (ruby-1.8.7-p357) (2012-02-22 3e82bc8) (Java HotSpot(TM) 64-Bit Server VM 1.6.0_31) [darwin-x86_64-java]
+2012-04-24 14:26:50 INFO: Info: received min runtimes = 1
+2012-04-24 14:26:50 INFO: Info: received max runtimes = 5
+2012-04-24 14:26:50 INFO: An exception happened during JRuby-Rack startup
+uninitialized constant JrackTest
+--- System
+jruby 1.6.7 (ruby-1.8.7-p357) (2012-02-22 3e82bc8) (Java HotSpot(TM) 64-Bit Server VM 1.6.0_31) [darwin-x86_64-java]
+Time: Tue Apr 24 09:26:50 -0500 2012
+Server: Apache Tomcat/7.0.26
+jruby.home: /Users/dayas/.rbenv/versions/jruby-1.6.7
+
+--- Context Init Parameters:
+jruby.compat.version = 1.8.7
+jruby.initial.runtimes = 1
+jruby.max.runtimes = 5
+jruby.min.runtimes = 1
+public.root = /public
+rack.env = development
+rackup.path = config.ru
+
+--- Backtrace
+NameError: uninitialized constant JrackTest
+         const_missing at org/jruby/RubyModule.java:2642
+         const_missing at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/rake-0.9.2.2/lib/rake/ext/module.rb:36
+                (root) at /Users/dayas/RubyProjects/padrino_jruby/app/controllers/index.rb:1
+               require at org/jruby/RubyKernel.java:1033
+             safe_load at /Users/dayas/RubyProjects/padrino_jruby/app/controllers/index.rb:148
+  require_dependencies at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core/loader.rb:162
+                  each at org/jruby/RubyArray.java:1615
+  require_dependencies at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core/loader.rb:160
+  require_dependencies at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core/application.rb:236
+    setup_application! at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core/application.rb:95
+              map_onto at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core/mounter.rb:88
+           application at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core.rb:57
+                  each at org/jruby/RubyArray.java:1615
+           application at /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/padrino-core-0.10.5/lib/padrino-core.rb:57
+                (root) at /Users/dayas/RubyProjects/padrino_jruby/config.ru:9
+         instance_eval at org/jruby/RubyKernel.java:2045
+            initialize at file:/Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/jruby-rack-1.1.5/lib/jruby-rack-1.1.5.jar!/vendor/rack-1.4.1/rack/builder.rb:51
+                (root) at /Users/dayas/RubyProjects/padrino_jruby/config.ru:1
+
+--- RubyGems
+Gem.dir: /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino
+Gem.path:
+/Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino
+/Users/dayas/RubyProjects/padrino_jruby/WEB-INF/gems
+Activated gems:
+  bundler-1.1.3
+  rake-0.9.2.2
+  multi_json-1.2.0
+  activesupport-3.1.4
+  diff-lcs-1.1.3
+  mime-types-1.18
+  grit-2.4.1
+  haml-3.1.4
+  rack-1.4.1
+  url_mount-0.2.1
+  http_router-0.10.2
+  i18n-0.6.0
+  polyglot-0.3.3
+  treetop-1.4.10
+  mail-2.3.3
+  rack-protection-1.2.0
+  tilt-1.3.3
+  sinatra-1.3.2
+  thor-0.14.6
+  padrino-core-0.10.5
+  padrino-helpers-0.10.5
+  padrino-admin-0.10.5
+  padrino-cache-0.10.5
+  padrino-gen-0.10.5
+  padrino-mailer-0.10.5
+  padrino-0.10.5
+  rack-test-0.6.1
+  rspec-core-2.9.0
+  rspec-expectations-2.9.1
+  rspec-mocks-2.9.0
+  rspec-2.9.0
+  sinatra-flash-0.3.0
+
+--- Bundler
+Bundler.bundle_path: /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino
+Bundler.root: /Users/dayas/RubyProjects/padrino_jruby
+Gemfile: /Users/dayas/RubyProjects/padrino_jruby/Gemfile
+Settings:
+  build.pg = -–with-opt-include=/usr/local/Cellar/postgresql/9.0.0//include/ --with-opt-lib=/usr/local/Cellar/postgresql/9.0.0/lib/
+  bin_path = /Users/dayas/.rbenv/versions/jruby-1.6.7/gemsets/padrino/gems/bundler-1.1.3/bin/bundle
+  gemfile = /Users/dayas/RubyProjects/padrino_jruby/Gemfile
+
+--- JRuby-Rack Config
+compat_version = RUBY1_8
+default_logger = org.jruby.rack.logging.StandardOutLogger@a377714
+err = java.io.PrintStream@4a8fc7a7
+filter_adds_html = true
+filter_verifies_resource = false
+ignore_environment = false
+initial_memory_buffer_size = 
+initial_runtimes = 1
+jms_connection_factory = 
+jms_jndi_properties = 
+logger = org.jruby.rack.logging.ServletContextLogger@2eb89c06
+logger_class_name = servlet_context
+logger_name = jruby.rack
+maximum_memory_buffer_size = 
+maximum_runtimes = 5
+num_initializer_threads = 
+out = java.io.PrintStream@7ce9927a
+rackup = 
+rackup_path = config.ru
+rewindable = true
+runtime_arguments = 
+runtime_timeout_seconds = 
+serial_initialization = false
+servlet_context = org.apache.catalina.core.ApplicationContextFacade@5c64bc1e
+2012-04-24 14:26:50 SEVERE: unable to create shared application instance
+2012-04-24 14:26:50 SEVERE: Error: application initialization failed
+2012-04-24 14:26:50 INFO: Starting ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:27:40 INFO: Pausing ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:27:40 INFO: Stopping service Tomcat
+2012-04-24 14:27:40 INFO: Stopping ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:27:40 INFO: Destroying ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:31:25 INFO: No global web.xml found
+2012-04-24 14:31:26 INFO: jruby 1.6.7 (ruby-1.8.7-p357) (2012-02-22 3e82bc8) (Java HotSpot(TM) 64-Bit Server VM 1.6.0_31) [darwin-x86_64-java]
+2012-04-24 14:31:34 INFO: Starting ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:32:20 INFO: Pausing ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:32:20 INFO: Stopping service Tomcat
+2012-04-24 14:32:20 INFO: Stopping ProtocolHandler ["http-bio-4000"]
+2012-04-24 14:32:20 INFO: Destroying ProtocolHandler ["http-bio-4000"]
