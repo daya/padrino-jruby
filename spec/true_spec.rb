@@ -6,6 +6,7 @@ describe "blah" do
   end 
 
   it "should test false is true" do
+    p 1111
     false.should be_true
   end 
 end
