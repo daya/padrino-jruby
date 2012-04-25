@@ -5,8 +5,8 @@ describe "blah" do
     true.should be_true
   end 
 
-  it "should test false is true" do
-    p 1111
-    false.should be_true
-  end 
+  # it "should test false is true" do
+  #   p 1111
+  #   false.should be_true
+  # end 
 end
